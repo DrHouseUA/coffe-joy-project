@@ -31,8 +31,8 @@
 
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/coffe-joy-project/assets/index-ab9725a3.js"></script>
-    <link rel="stylesheet" href="/coffe-joy-project/assets/index-19ae248d.css">
+    <script type="module" crossorigin src="/coffe-joy-project/assets/index-2f314626.js"></script>
+    <link rel="stylesheet" href="/coffe-joy-project/assets/index-4162240b.css">
   </head>
   <body>
     <header class="header">
@@ -43,6 +43,7 @@
       </svg>
     </a>
 
+    <!-- btn menu -->
     <button
       class="mobile-menu-btn"
       type="button"
@@ -53,13 +54,30 @@
       </svg>
     </button>
 
-    <nav class="header-nav">
-      <ul class="header-nav-list">
-        <li class="header-nav-item"><a href="#about">About us</a></li>
-        <li class="header-nav-item"><a href="#benefits">Benefits</a></li>
-        <li class="header-nav-item"><a href="#gallery">Gallery</a></li>
-        <li class="header-nav-item"><a href="#testimonials">Testimonial</a></li>
-        <li class="header-nav-item"><a href="#location">Location</a></li>
+    <!-- btn close -->
+    <!-- <button class="mobile-close-btn">
+      <svg class="mobile-close-icon" width="24" height="24">
+        <use href="/images.svg#icon-close-btn"></use>
+      </svg>
+    </button> -->
+
+    <nav class="header-nav" data-mobile>
+      <ul class="header-nav-list" data-mobile>
+        <li class="header-nav-item" data-mobile>
+          <a href="#about">About us</a>
+        </li>
+        <li class="header-nav-item" data-mobile>
+          <a href="#benefits">Benefits</a>
+        </li>
+        <li class="header-nav-item" data-mobile>
+          <a href="#gallery">Gallery</a>
+        </li>
+        <li class="header-nav-item" data-mobile>
+          <a href="#testimonial">Testimonial</a>
+        </li>
+        <li class="header-nav-item" data-mobile>
+          <a href="#location">Location</a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -800,21 +818,8 @@
   </div>
 </section>
 
-    <div class="mobile-menu">
-  <!-- <div class="mobile-menu-wrapper">
-    <a href="" class="header-logo">
-      <svg class="header-logo-icon" width="84" height="36">
-        <use href="/images.svg#icon-logo"></use>
-      </svg>
-    </a>
-
-    <button class="mobile-menu-btn">
-      <svg class="modal-btn-icon" width="12" height="12">
-        <use href="/images.svg#icon-close-btn"></use>
-      </svg>
-    </button>
-  </div> -->
-
+    <!-- Must write "is-open" class -->
+<div class="mobile-menu container">
   <ul class="mobile-menu-list">
     <li class="mobile-menu-item"><a href="#">About us</a></li>
     <li class="mobile-menu-item"><a href="#">Benefits</a></li>
