@@ -32,8 +32,8 @@
 
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/coffe-joy-project/assets/index-f070a73f.js"></script>
-    <link rel="stylesheet" href="/coffe-joy-project/assets/index-d882f6e7.css">
+    <script type="module" crossorigin src="/coffe-joy-project/assets/index-18197b62.js"></script>
+    <link rel="stylesheet" href="/coffe-joy-project/assets/index-907c3c31.css">
   </head>
   <body>
     <header class="header">
@@ -46,6 +46,7 @@
 
     <!-- btn menu -->
     <button
+      id="mob-menu"
       class="mobile-menu-btn"
       type="button"
       aria-label="Mobile menu button"
@@ -108,12 +109,14 @@
           dedication. We are committed to sourcing high-quality beans and
           roasting them to perfection, ensuring each sip is a delight.
         </p>
-        <button class="location-btn" type="button">
-          Find location
-          <svg class="location-btn-icon" width="24" height="24">
-            <use href="/coffe-joy-project/images.svg#icon-map-pin"></use>
-          </svg>
-        </button>
+        <a href="#location">
+          <button class="location-btn" type="button">
+            Find location
+            <svg class="location-btn-icon" width="24" height="24">
+              <use href="/coffe-joy-project/images.svg#icon-map-pin"></use>
+            </svg>
+          </button>
+        </a>
       </div>
     </div>
     <picture class="welcome-img">
@@ -144,7 +147,9 @@
   <div class="container quality-container">
     <div class="quality-header-wrapper">
       <p class="name-section-quality">Quality</p>
-      <h2 class="quality-header">Why CoffeeJoy Stands Out from the Rest</h2>
+      <h2 class="quality-header">
+        Why CoffeeJoy Stands Out <br />from the Rest
+      </h2>
       <p class="main-discription-quality">
         At CoffeeJoy, we pride ourselves on delivering the freshest roasted
         coffee, crafted with care by our skilled baristas. Our flexible
@@ -478,7 +483,7 @@
             placeholder="Your Email Here"
             required
           />
-          <button class="subscribe-button" type="submit">
+          <button id="subscribe-btn" class="subscribe-button" type="submit">
             Subscribe
             <svg class="subscribe-button-icon" width="24" height="24">
               <use href="/coffe-joy-project/images.svg#icon-chevrons-right"></use>
@@ -882,7 +887,7 @@
   </div>
 </section>
 
-    <div class="mobile-menu container">
+    <div class="mobile-menu container" id="mobileMenu">
   <div class="mobile-menu-wrapper">
     <a href="" class="header-logo">
       <svg class="header-logo-icon" width="84" height="36">
