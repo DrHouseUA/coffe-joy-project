@@ -31,8 +31,8 @@
 
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/coffe-joy-project/assets/index-323f4fb1.js"></script>
-    <link rel="stylesheet" href="/coffe-joy-project/assets/index-0600fa80.css">
+    <script type="module" crossorigin src="/coffe-joy-project/assets/index-c1f48fb7.js"></script>
+    <link rel="stylesheet" href="/coffe-joy-project/assets/index-bc861607.css">
   </head>
   <body>
     <header class="header">
@@ -447,11 +447,39 @@
       </form>
     </div>
     <div class="subscribe-image-wrapper">
-      <img
-        class="subscribe-picture"
-        src="/coffe-joy-project/assets/subscribe-img-desktop-min-33a2edcc.png"
-        alt="subscribe-picture"
-      />
+      <picture>
+        <!-- desktop -->
+        <source
+          media="(min-width:1440px)"
+          srcset="
+            ../img/desktop/subscribe-img-desktop@1x-min.png 1x,
+            ../img/desktop/subscribe-img-desktop@2x-min.png 2x
+          "
+        />
+
+        <!-- tablet -->
+        <source
+          media="(min-width:768px)"
+          srcset="
+            ../img/tabelet/subscribe-img-tablet@1x.png 1x,
+            ../img/tabelet/subscribe-img-tablet@2x.png 2x
+          "
+        />
+
+        <!-- mobile -->
+        <source
+          media="(max-width:767px)"
+          srcset="
+            ../img/mobile/subscribe-img-phone@1x.png 1x,
+            ../img/mobile/subscribe-img-phone@2x.png 2x
+          "
+        />
+        <img
+          class="subscribe-picture"
+          src="../img/desktop/subscribe-img-desktop@1x-min.png"
+          alt="subscribe-picture"
+        />
+      </picture>
     </div>
   </div>
 </section>
